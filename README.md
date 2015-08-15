@@ -11,7 +11,7 @@ Ttries to do two simple things:
 * python with [subliminal](https://github.com/Diaoul/subliminal) (version 1.0.1 works fine, older will not). I recommend *pip* for easy peasy installation.
 
 ###### Using
-* copy script to ~/.config/mpv/scripts
+* copy script to ~/.config/mpv/scripts (for some older versions than 0.9.2 it will propably be a slight different path;check [here](http://mpv.io/manual/master/#files))
 * press "s" while playing a movie and after some time you will see an osd message indicating status (the subtitle will be automatically donwloaded and loaded)
 
 ###### Notes
