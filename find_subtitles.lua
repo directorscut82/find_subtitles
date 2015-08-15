@@ -8,6 +8,7 @@ require 'string'
 -- (this function binds letter "s")
 
 -- function for capturing cli response
+-- Reference: http://stackoverflow.com/questions/132397
 function os.capture(cmd, raw)
 	local f = assert(io.popen(cmd, 'r'))
 	local s = assert(f:read('*a'))
