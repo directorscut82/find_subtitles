@@ -12,7 +12,7 @@ Ttries to do two simple things:
 
 ###### Using
 * copy script to ~/.config/mpv/scripts
-* press "s" while playing a movie and after some time you will see an osd message indicating status (the subtitle is automatically donwloaded and loaded)
+* press "s" while playing a movie and after some time you will see an osd message indicating status (the subtitle will be automatically donwloaded and loaded)
 
 ###### Notes
 * Assumes subliminal is available from terminal (if you use it from a non-default path you need to update line 22)
