@@ -7,7 +7,7 @@ require 'string'
 -- 2. load any subtitles found within movie folder
 -- (this function binds letter "s")
 
--- function for capturing cli response
+-- helper function for capturing cli response
 -- Reference: http://stackoverflow.com/questions/132397
 function os.capture(cmd, raw)
 	local f = assert(io.popen(cmd, 'r'))
@@ -17,7 +17,6 @@ return string.sub(s, 0, -2)
 end
 
 function find_subtitles()
-
 	-- use subliminal to fetch english subtitles from all providers (change en to your preference if needed)
 	mp.msg.info("Searching for subtitles..")
 	local ss = os.capture("subliminal download --provider opensubtitles --provider podnapisi --provider thesubdb --provider tvsubtitles -l en -v '" .. mp.get_property("path") .. "'")
@@ -43,15 +42,15 @@ function find_subtitles()
     	for filename in io.popen('ls -a'):lines() do
 		if string.find(filename,'srt') then
 
-			--sub_add mpv command does not like spaces so just rename subtitle
-			--without them (if any)
+			-- sub_add mpv command does not like spaces so just rename subtitle
+			-- without them (if any)
 			if string.find(filename,' ') then
 				ss = string.gsub(filename,"( )",'')
 				os.rename(filename,ss)
 				filename = ss	
 			end
 
-			--load the file(s)
+			--load file to mpv
 			mp.command("sub_add " .. filename .. "")
 		end		
     	end
