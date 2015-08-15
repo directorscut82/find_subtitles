@@ -20,7 +20,7 @@ function find_subtitles()
 	-- use subliminal to fetch english subtitles from all providers (change en to your preference if needed)
 	mp.msg.info("Searching for subtitles..")
 	local ss = os.capture("subliminal download --provider opensubtitles --provider podnapisi --provider thesubdb --provider tvsubtitles -l en -v '" .. mp.get_property("path") .. "'")
-	-- you can also use this if you join addict7d (replaces user and pass with yours; use no quotes just the strings)
+	-- you can also use this if you join addict7d (replace user and pass with yours; use no quotes just the strings)
 	-- local ss = os.capture("subliminal --addic7ed user pass download --provider addic7ed --provider opensubtitles --provider podnapisi --provider thesubdb --provider tvsubtitles -l en -v '" .. mp.get_property("path") .. "'")
 
 	-- strip unnecessary info (as of version 1.0.1 the string matchings below are working ... dont know for how long though
