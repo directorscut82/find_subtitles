@@ -26,7 +26,7 @@ function find_subtitles()
 	-- strip unnecessary info (as of subliminal version 1.0.1 the string matchings below are working ... dont know for how long though
 	ss = string.gsub(ss,"(Collecting videos)",'')
 	ss = string.gsub(ss,"(Downloading subtitles)",'')
-	ss = string.gsub(ss,"(1 video collected / 0 video ignored / 0 error)",'')
+	ss = string.gsub(ss,"(1 video collected / 0 video ignored / 0 error)",'.')
 	ss = string.gsub(ss,"\n",'')	
 	if string.match(ss,"0 video collected / 1 video ignored / 0 error") then
 		ss = "Subtitle already in path.. "
