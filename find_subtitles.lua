@@ -43,7 +43,7 @@ function find_subtitles()
     	for filename in io.popen('ls -a'):lines() do
 		if string.find(filename,'srt') then
 
-			--sub_add mpv command does not like spaces so we just rename each file
+			--sub_add mpv command does not like spaces so just rename subtitle
 			--without them (if any)
 			if string.find(filename,' ') then
 				ss = string.gsub(filename,"( )",'')
