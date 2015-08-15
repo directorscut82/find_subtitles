@@ -8,9 +8,13 @@ Ttries to do two simple things:
 ###### Prerequisites
 * some linux distribution with basic bash shell support (i use ubuntu 14.04)
 * [mpv](http://mpv.io) player
-* python with [subliminal](https://github.com/Diaoul/subliminal) (version 1.0.1 works fine, older will not)
+* python with [subliminal](https://github.com/Diaoul/subliminal) (version 1.0.1 works fine, older will not). I recommend *pip* for easy peasy installation.
 
 ###### Using
 * copy script to ~/.config/mpv/scripts
-* press "s" while playing a movie and after some time you will see an osd message indicating status
+* press "s" while playing a movie and after some time you will see an osd message indicating status (the subtitle is automatically donwloaded and loaded)
+
+###### Notes
+* Assumes subliminal is available from terminal (if you use it from a non-default path you need change  
+* As it captures console output with Lua system calls i doubt it will work in windows without changes
 
