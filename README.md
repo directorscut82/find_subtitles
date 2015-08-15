@@ -10,5 +10,7 @@ Ttries to do two simple things:
 * [mpv](http://mpv.io) player
 * python with [subliminal](https://github.com/Diaoul/subliminal) (version 1.0.1 works fine, older will not)
 
+###### Using
+* copy script to ~/.config/mpv/scripts
+* press "s" while playing a movie and after some time you will see an osd message indicating status
 
-*(binds letter "s")*
