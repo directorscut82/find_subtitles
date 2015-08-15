@@ -33,10 +33,10 @@ function find_subtitles()
 		ss = "Subtitle already in path.. "
 	end	
 	
-	-- Possible messages: 
+	-- Possible messages to display: 
 	-- "1 subtitle downloaded for <FILENAME>", if subliminal returned without errors 
 	-- "Subtitle already in path..", if there are already subtitles in the folder
-        --  <captured errors>, if something gone wrong
+        --  <captured errors>, if something has gone wrong
 	mp.osd_message(string.format(" %s",ss),4)		
 	
 	-- no matter what happened, try to load *.srt files (if any)
