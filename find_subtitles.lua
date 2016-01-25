@@ -40,7 +40,7 @@ function find_subtitles()
 	
 	-- no matter what happened, try to load *.srt files (if any)
     	for filename in io.popen('ls -a'):lines() do
-		if string.find(filename,'srt') then
+		if string.match(filename,"%.srt$") then
 
 			-- sub_add mpv command does not like spaces so just replace them
 			-- with dots (if any)
