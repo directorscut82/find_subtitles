@@ -42,4 +42,4 @@ function find_subtitles()
 			mp.commandv("rescan_external_files", "reselect")
 end
 
-mp.add_key_binding("b", "subtitles", find_subtitles)
+mp.add_key_binding("s", "subtitles", find_subtitles)
