@@ -38,22 +38,8 @@ function find_subtitles()
         --  <captured errors>, if something has gone wrong
 	mp.osd_message(string.format(" %s",ss),4)		
 	
-	-- no matter what happened, try to load *.srt files (if any)
-    	for filename in io.popen('ls -a'):lines() do
-		if string.match(filename,"%.srt$") then
-
-			-- sub_add mpv command does not like spaces so just replace them
-			-- with dots (if any)
-			if string.find(filename,' ') then
-				ss = string.gsub(filename,"( )",'.')
-				os.rename(filename,ss)
-				filename = ss	
-			end
-
-			--load file to mpv
-			mp.command("sub_add " .. filename .. "")
-		end		
-    	end
+	-- load *.srt file
+			mp.commandv("rescan_external_files", "reselect")
 end
 
-mp.add_key_binding("s", "subtitles", find_subtitles)
+mp.add_key_binding("b", "subtitles", find_subtitles)
