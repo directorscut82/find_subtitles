@@ -39,7 +39,8 @@ function find_subtitles()
 	mp.osd_message(string.format(" %s",ss),4)		
 	
 	-- no matter what happened, try to load *.srt files (if any)
-    	for filename in io.popen('ls -a'):lines() do
+    	-- for filename in io.popen('ls -a'):lines() do
+    	for filename in io.popen('ls -a "'..mp.get_property("path")..'"'):lines() do
 		if string.match(filename,"%.srt$") then
 
 			-- sub_add mpv command does not like spaces so just replace them
