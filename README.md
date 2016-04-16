@@ -1,14 +1,14 @@
 ## find_subtitles <img src="https://cloud.githubusercontent.com/assets/8236909/9288343/8b64fb36-434a-11e5-980c-bd2cf67cb0a2.jpg" width="30">
 ###### find_subtitles is a lua script for mpv to (down)load subtitles
-Ttries to do two simple things:
+Tries to do two simple things:
 * use python's subliminal for downloading subtitles
 * load any subtitles found within movie folder
 
 ------
 ###### Prerequisites
-* some linux distribution with basic bash shell support (i use ubuntu 14.04)
+* a linux OS (i currently use ubuntu 15.10)
 * [mpv](http://mpv.io) player
-* python with [subliminal](https://github.com/Diaoul/subliminal) (version 1.0.1 works fine, older will not). I recommend *pip* for easy peasy installation.
+* python with [subliminal](https://github.com/Diaoul/subliminal) (version(s) 1.0.1+ work fine, older will not). I recommend *pip* for easy peasy installation.
 
 ###### Using
 * copy script to ~/.config/mpv/scripts (for some older versions than 0.9.2 it will propably be a slight different path; check [here](http://mpv.io/manual/master/#files))
