@@ -6,7 +6,7 @@ mputils = require 'mp.utils'
 -- "find_subtitles" tries to do two simple things:
 -- 1. use python's subliminal for downloading subtitles
 -- 2. load any subtitles found within movie folder
--- (this function binds letter "s")
+-- (this script binds letter "s")
 
 -- helper function for capturing cli response
 -- Reference: http://stackoverflow.com/questions/132397
