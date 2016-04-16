@@ -8,7 +8,7 @@ Tries to do two simple things:
 ###### Prerequisites
 * a linux OS (i currently use ubuntu 15.10)
 * [mpv](http://mpv.io) player
-* python with [subliminal](https://github.com/Diaoul/subliminal) (version(s) 1.0.1+ work fine, older will not). I recommend *pip* for easy peasy installation.
+* python with [subliminal](https://github.com/Diaoul/subliminal) (version(s) 1.0.1+ work fine, older will not). [ *pip* for easy peasy installation is recommended]
 
 ###### Using
 * copy script to ~/.config/mpv/scripts (for some older versions than 0.9.2 it will propably be a slight different path; check [here](http://mpv.io/manual/master/#files))
