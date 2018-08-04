@@ -67,10 +67,11 @@ function find_subtitles()
 				filename = ss
 			end
 
-			--load file to mpv
-			mp.command("sub_add " .. mputils.join_path(dr, filename) .. "")
+			-- load file to mpv and select
+			mp.commandv("sub-add", mputils.join_path(dr, filename), "select")
 		end
 	end
 end
 
 mp.add_key_binding("s", "subtitles", find_subtitles)
+mp.register_event("start-file", find_subtitles)
