@@ -6,7 +6,7 @@ Tries to do two simple things:
 
 ------
 ###### Prerequisites
-* a linux OS (i currently use ubuntu 15.10)
+* a linux OS
 * [mpv](http://mpv.io) player
 * python with [subliminal](https://github.com/Diaoul/subliminal) (version(s) 1.0.1+ work fine, older will not). [ *pip* for easy peasy installation is recommended]
 
