@@ -15,7 +15,7 @@ Tries to do two simple things:
 * press "s" while playing a movie and after some time you will see an osd message indicating status (the subtitle will be automatically donwloaded and loaded)
 
 ###### Notes
-* Assumes subliminal is available from terminal (if you use it from a non-default path you need to update line 22)
-* Downloads English subtitles (if you require other languages you need to update line 22)
+* Assumes subliminal is available from terminal (if you use it from a non-default path you need to update line 38)
+* Downloads English subtitles (if you require other languages you need to update line 38)
 * As it captures console output with Lua system calls i doubt it will work in windows without changes
 
