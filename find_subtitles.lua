@@ -35,7 +35,7 @@ function find_subtitles()
 	mp.msg.info("Searching for subtitles..")
 	local ss =
 		os.capture(
-		"subliminal download --provider opensubtitles --provider podnapisi --provider thesubdb --provider tvsubtitles -l en -v '" ..
+		"subliminal download --provider opensubtitles --provider podnapisi --provider tvsubtitles -l en -v '" ..
 			fp .. "'"
 	)
 	-- you can also use this if you join addict7d (replace user and pass with yours; use no quotes just the strings)
